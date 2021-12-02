@@ -1,0 +1,333 @@
+form {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+form h1 {
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  font-size: 50px;
+      color: #8bc73a;
+      text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  border-bottom: 1px solid #ccc;
+  
+}
+form .row {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+form input[type="text"], form input[type="number"],form input[type="email"], form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px 10px 90px;
+  box-sizing: border-box;
+  border: 1px solid #8bc73a;
+  color: #333;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form textarea {
+  height: auto;
+  min-height: 200px;
+  padding: 50px 10px 10px 10px;
+}
+
+form input[type="text"] + label, form input[type="number"] + label, form input[type="email"] + label, form textarea + label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black;
+  background: #8bc73a;
+  border-radius: 3px 0 0 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+}
+form textarea + label {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+form input[type="text"]:focus, form input[type="number"]:focus ,form input[type="email"]:focus{
+  padding-left: 10px;
+}
+form textarea:focus {
+  padding-top: 10px;
+}
+form input[type="text"]:focus + label, form input[type="number"]:focus + label ,form input[type="email"]:focus + label {
+  transform: translateZ(0) translateX(-100%);
+}
+form textarea:focus + label {
+  transform: translateZ(0) translateY(-100%);
+}
+form input[type="checkbox"], form input[type="radio"] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+form input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #ccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transform: translateZ(0) translate(-50%, -50%) scale(0);
+}
+form input[type="radio"]:checked + label {
+  background: #8bc73a;
+}
+form input[type="radio"]:checked + label:before {
+  transform: translateZ(0) translate(-50%, -50%) scale(1);
+}
+form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #ccc;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #8bc73a;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transform: translateZ(0) scale(0);
+}
+form input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  height: 26px;
+  width: 26px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+}
+form input[type="checkbox"]:checked + label {
+  background: #8bc73a;
+}
+form input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 28px);
+  transform: translateZ(0);
+}
+form button {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(53, 51, 51);
+  border: none;
+  background: #8bc73a;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+  z-index: 2;
+}
+form button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #01579b;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) scale(0);
+  z-index: -1;
+}
+form button:hover:before, form button:focus:before {
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  margin-bottom: 25px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #8bc73a;
+  width: 590px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 570px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #0f0f0f;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #8bc73a;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 590px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fancy-texted{
+  font-family: 'Shippori Antique', sans-serif;
+    
+    margin-left: 90px;
+    font-size: 20px;
+}
+.input-special{
+  height: 40px;
+  border: 1px solid #8bc73a;
+}
+
+.row-sp{
+  display: flex;
+  align-items: center;
+}
+.closing1{
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+
+
+
+
+.myitems{
+  margin-right: 30px;
+}
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #8bc73a;
+  transition: 0.4s
+}
+
+.nav-item:hover::after {
+  width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #8bc73a
+}
+
+.nav-link {
+  padding: 5px 5px;
+  transition: 0.2s
+}
+.navbar-nav > li > .dropdown-menu {     background-color: #8bc73a;  }
+
+
+
+.navbar-nav > li > .dropdown-menu a{   color: #080808;  }
+
+.submitbtm{
+  margin-left: 200px;
+  margin-top: 40px;
+}

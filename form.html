@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./form.css" /> 
+
+    <title>form</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/xsoduslogo.png" alt="logo" width="200" height="60">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"><span class="myitems">Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html"><span class="myitems">About</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="myitem">Countries</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./india.html">India</a></li>
+                    <li><a class="dropdown-item" href="./us.html">United states</a></li>
+                    <li><a class="dropdown-item" href="./cannada.html">Cannada</a></li>
+                    <li><a class="dropdown-item" href="./uk.html">United Kingdom</a></li>
+                    <li><a class="dropdown-item" href="./australia.html">Australia</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="myitem">Services</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Course Advice</a></li>
+                    <li><a class="dropdown-item" href="#">Admission Guidance</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Visa Assistance</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./livingabroad.html"><span class="myitem">Living Abroad</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="myitem">Contact Us</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<form action="#">
+  <h1> Form To Apply!</h1>
+
+  
+ 
+  
+  <div class="row">
+    <input type="text" name="fancy-text" id="fancy-text"/>
+    <label for="fancy-text">Name</label>
+  </div>
+
+  <div class="row">
+    <input type="email" name="fancy-text" id="fancy-text"/>
+    <label for="fancy-text">EMAIL</label>
+  </div>
+
+  <div class="row">
+    <input type="number" name="fancy-text" id="fancy-text"/>
+    <label for="fancy-text">PHONE</label>
+  </div>
+
+  <div class="row">
+    <label class="fancy-texted" style="margin-bottom: 20px;">WHEN DID YOU PLAN TO STUDY</label>
+    <input class="input-special" type="date" name="fancy-text" id="fancy-text"/>
+  </div>
+
+    <label class="fancy-texted" style="margin-bottom: 20px;">PREFERED STUDY DESTINATION</label>
+    <div class="custom-select" style="width:200px; margin-left: -12px;">
+      <select >
+        <option class="values" value="0">Select Location:</option>
+        <option value="1">India</option>
+        <option value="2">United States</option>
+        <option value="3">Cannada</option>
+        <option value="4">United Kingdom</option>
+        <option value="5">Australia</option>
+        <option value="6">Others</option>
+      </select>
+    </div>
+
+  
+    <label class="fancy-texted" style="margin-left: 120px; margin-bottom: 20px;">COURSE INTRESTED IN</label>
+    <div class="custom-select" style="width:200px; margin-left: -12px;">
+      <select >
+        <option value="0">Select Course:</option>
+        <option value="1">India</option>
+        <option value="2">United States</option>
+        <option value="3">Cannada</option>
+        <option value="4">United Kingdom</option>
+        <option value="5">Australia</option>
+        <option value="6">Others</option>
+      </select>
+    </div>
+
+  
+  <div class="row">
+    <textarea name="fancy-textarea" id="fancy-textarea"></textarea>
+    <label for="fancy-textarea">Specific Query</label>
+  </div>
+  
+  <p class="closing1">Xsodus will not share your details with others without your permission:
+  </p>
+
+  <div class="row-sp">
+    <input type="checkbox" name="fancy-checkbox" id="fancy-checkbox"/>
+    <label for="fancy-checkbox"> Xsodus Terms and privacy policy</label>
+    <p class="closing1"> I agree to Xsodus Terms and privacy policy <br> I would like to receive updates and offers from Xsodus</p>
+  </div>
+
+
+
+  <button class="submitbtm" type="submit" tabindex="0">Submit</button>
+</form>
+
+<script>
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+    selElmnt = x[i].getElementsByTagName("select")[0];
+    ll = selElmnt.length;
+    /*for each element, create a new DIV that will act as the selected item:*/
+    a = document.createElement("DIV");
+    a.setAttribute("class", "select-selected");
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+    /*for each element, create a new DIV that will contain the option list:*/
+    b = document.createElement("DIV");
+    b.setAttribute("class", "select-items select-hide");
+    for (j = 1; j < ll; j++) {
+      /*for each option in the original select element,
+      create a new DIV that will act as an option item:*/
+      c = document.createElement("DIV");
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener("click", function(e) {
+          /*when an item is clicked, update the original select box,
+          and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+      });
+      b.appendChild(c);
+    }
+    x[i].appendChild(b);
+    a.addEventListener("click", function(e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+  }
+  function closeAllSelect(elmnt) {
+    /*a function that will close all select boxes in the document,
+    except the current select box:*/
+    var x, y, i, xl, yl, arrNo = [];
+    x = document.getElementsByClassName("select-items");
+    y = document.getElementsByClassName("select-selected");
+    xl = x.length;
+    yl = y.length;
+    for (i = 0; i < yl; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i)
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (i = 0; i < xl; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+      }
+    }
+  }
+  /*if the user clicks anywhere outside the select box,
+  then close all select boxes:*/
+  document.addEventListener("click", closeAllSelect);
+  </script>
+</body>
+</html>
